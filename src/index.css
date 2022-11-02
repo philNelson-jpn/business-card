@@ -1,0 +1,152 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color-scheme: light dark;
+  color: hsla(0, 0%, 100%, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --blue: hsl(220, 65%, 70%);
+  --yellow: hsl(43, 98%, 58%);
+  --button-color: hsl(237, 100%, 70%);
+  --card-color: hsl(0, 0%, 14%);
+  --darkness: hsl(0, 0%, 10%);
+}
+
+a {
+  font-weight: 500;
+  color: var(--blue);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--darkness);
+}
+
+.profile-wrapper {
+  background-color: var(--card-color);
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-block: 1rem;
+}
+
+.profile-wrapper > h3 {
+  font-size: 1rem;
+  color: var(--yellow);
+  margin-block: 0;
+}
+
+button {
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid var(--button-color);
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--darkness);
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  width: 320px;
+}
+button:hover {
+  background-color: var(--button-color);
+  color: var(--card-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.envelope {
+  position: relative;
+  left: 0;
+  top: 2px;
+  display: inline-block;
+  padding-inline-end: 12px;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+button > a{
+  color: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* About & Interests*/
+
+.info {
+  width: 23em;
+  margin: 0;
+  padding: 0;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-wrapper {
+  text-align: left;
+  width: 320px;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 32px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.footer-icon {
+  color: hsla(0, 0%, 100%, 0.77);
+}
+
+.footer-icon:hover{
+  color: white;
+}
+
+
