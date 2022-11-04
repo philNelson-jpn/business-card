@@ -5,7 +5,7 @@ export default function Interests(){
         <div  className="interests info">
             <div className="info-wrapper">
                 <h2>Interests</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit iusto, consectetur architecto labore dignissimos saepe excepturi quo id, quod quibusdam iure..</p>
+                <p>Spending time with my wife and three children. Working out. Coding.</p>
             </div>
         </div>
     )

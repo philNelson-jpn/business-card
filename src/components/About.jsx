@@ -5,7 +5,7 @@ export default function About(){
         <div  className="about info">
             <div className="info-wrapper">
                 <h2>About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit iusto, consectetur architecto labore dignissimos saepe excepturi quo id, quod quibusdam iure..</p>
+                <p>English teacher in Japan. Fluent in Japanese, learning React. Creating language-learning apps and websites for businesses</p>
             </div>
         </div>
     )
